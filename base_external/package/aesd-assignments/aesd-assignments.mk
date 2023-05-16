@@ -9,7 +9,8 @@
 #AESD_ASSIGNMENTS_VERSION = ' b1840eb145b2dfe1a7bce12f53c1202d4f699dd0'
 #AESD_ASSIGNMENTS_VERSION =  'ec912273c60b1df071846ea0bc5ebda272f22516'  
 #AESD_ASSIGNMENTS_VERSION =  'c7dbb5564ba28d5c5d87d8bc755deb3f03de1072'  
-AESD_ASSIGNMENTS_VERSION =  '73b60e9b2a123ec5be9d3f4da2cd3c1021eb2156'  
+#AESD_ASSIGNMENTS_VERSION =  '73b60e9b2a123ec5be9d3f4da2cd3c1021eb2156'  
+AESD_ASSIGNMENTS_VERSION =   '5096372503b88cb017285e0a7712094a255e68c5'  
 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
@@ -19,7 +20,7 @@ AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
+#	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
 endef
 
